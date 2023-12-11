@@ -1,14 +1,16 @@
+import { useState } from "react";
+
 //Named export
 export const Title = () => (
     <a href ="/">
-        <img className="logo" alt = "logo" src = "https://cdn.dotpe.in/longtail/store-logo/1023934/dOZPIFia.jpeg" />
+        <img className="logo" alt = "logo" src = {require("../../images/food_villa_logo.jpg" )}/>
     </a>
 )
 
 const HeaderComponent = () => {
     return (
         <div className="header">
-            <Title />
+            <Title />            
             <div className="nav-items"> 
                 <ul>
                     <li>Home</li>
